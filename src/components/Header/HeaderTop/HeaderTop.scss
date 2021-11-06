@@ -1,0 +1,40 @@
+@import "../../../grid";
+.header-top
+  {
+    border-bottom: 1px solid rgb(100, 92, 92);
+    padding: 10px 0;
+    .container
+    {
+      
+      @include md()
+      {
+          justify-content: center;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p 
+      {
+        color:#c4d4df;
+        font-size: 16px;
+        text-align: center;
+      }
+      ul 
+      {
+          display: flex;
+          @include md()
+          {
+              display: none;
+          }
+          width: 45%;
+          justify-content: space-between;
+          li 
+          {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+          }
+      }     
+    }
+  }
