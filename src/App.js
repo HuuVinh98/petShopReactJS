@@ -9,6 +9,12 @@ import ScrollTop from './components/ScrollTop/ScrollTop';
 import Products from "./components/Products/Products";
 import Trending from "./components/Trending/Treding";
 import Special from "./components/Special/Special";
+import Outstanding from "./components/Outstanding/Outstanding";
+import Sale from "./components/Sale/Sale";
+import Beautiful from "./components/Beautiful/Beautiful";
+import Gallery from "./components/Gallery/Gallery";
+import Reviews from "./components/Reviews/Reviews";
+import Footer from "./components/Footer/Footer";
 function App() {
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
@@ -26,6 +32,12 @@ function App() {
       <Products />
       <Trending />
       <Special /> 
+      <Outstanding />
+      <Sale />
+      <Beautiful />
+      <Gallery />
+      <Reviews />
+      <Footer />
     </div>
   );
 }

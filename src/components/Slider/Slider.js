@@ -10,7 +10,7 @@ function Slider()
 {
     return (  
         <div className='slider' >            
-                <OwlCarousel items={1}  
+            <OwlCarousel items={1}  
                     className="owl-theme"  
                     loop  
                     nav  
@@ -48,7 +48,7 @@ function Slider()
                         </div>
                         <img  className="img" src= {slide3}/>
                     </div>  
-                </OwlCarousel>  
+            </OwlCarousel>      
         </div>   
       )  
 }

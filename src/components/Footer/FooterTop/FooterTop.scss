@@ -1,0 +1,111 @@
+@import "../../../grid";
+
+.top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        @include xs()
+        {
+            flex-direction: column;
+        }
+        .first-item
+        {
+            width: 30%;
+            @include xs()
+            {
+                width: 100%;
+            }
+            ul 
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li 
+                {
+                    &:first-child
+                    {
+                        width: max-content;
+                        img 
+                        {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    
+                    }
+                    &:last-child
+                    {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        @include xs()
+                        {
+                            justify-content: center;
+                        }
+                    }
+                    width: 90%;
+                    margin-bottom: 20px;
+                    span 
+                    {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 10px;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #504d4d;
+                        padding: 10px;
+                        border-radius: 10px;
+                       
+                    }
+                }
+            }
+        }     
+        .row
+        {
+            width: 60%;
+            justify-content: space-between;
+            @include md()
+            {
+                width: 70%;
+            }
+            @include xs()
+            {
+                width: 100%;
+            }
+            ul
+            {
+                //margin-left: 20%;
+                
+                li 
+                {
+                    margin-left: 20%;
+                    &:first-child
+                    {
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        color: #504d4d;
+                    }
+                    transition: all 0.5s;
+                    &:hover
+                    {
+                        a 
+                        {
+                            color: #266CF9;
+
+                        }
+                        margin-left: 10px;
+                    }
+                    a 
+                    {
+                        color: black;
+                        font-size: 20px;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
