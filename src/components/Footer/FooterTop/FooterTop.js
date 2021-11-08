@@ -5,8 +5,8 @@ import { faFacebookF,faYoutube, faInstagram, faLinkedin } from '@fortawesome/fre
 export default function FooterTop()
 {
     return (
-        <div className="top">
-            <div className="first-item">
+        <div className="footer-top">
+            <div className="footer-top__left">
                 <ul>
                     <li><a href=""><img src={logo} alt=""/></a></li>
                     <li style={{textAlign:"center"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nesciunt voluptatem beatae nemo. </li>
@@ -28,7 +28,7 @@ export default function FooterTop()
                     </li>
                 </ul>
             </div>
-            <div className="row">
+            <div className="footer-top__right row">
                 <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <ul>
                     <li>Services</li>

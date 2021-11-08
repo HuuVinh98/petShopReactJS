@@ -4,13 +4,13 @@ import exfish from "../../images/exfish.png"
 export default function Special()
 {
     return (
-    <section className="pet-products">
+    <section className="special">
         <div className="container">
-            <div className="title">
-                    <div className="left">
+            <div className="special-title">
+                    <div className="special-title__left">
                         <h2>Special Products</h2>
                     </div>
-                    <div className="right">
+                    <div className="special-title__right">
                         <button><a href="">New Arrivals</a></button>
                         <button><a href="">Best Sellers</a></button>
                         <button><a href="">On Sale</a></button>
@@ -18,7 +18,7 @@ export default function Special()
                     </div>
             </div>
             
-            <div className="products">
+            <div className="special-products">
                 <div className="row">
                     <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
                         <Item

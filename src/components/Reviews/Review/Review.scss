@@ -8,19 +8,19 @@
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
 
-    p.mess 
+    p.review__mess 
     {
         width: 90%;
         text-align: center;
         margin-bottom: 30px;
     }
-    .info
+    .reviewer-info
     {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        .left
+        .reviewer-info__left
         {
             width: 30%;
             img 
@@ -36,7 +36,7 @@
                 }
             }
         }
-        .right
+        .reviewer-info__right
         {
             width: 70%;
             @include xs()

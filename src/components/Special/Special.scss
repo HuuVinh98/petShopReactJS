@@ -1,10 +1,10 @@
 @import "../../grid";
-.pet-products
+.special
 {
     background-color: #F2F8FD;
     padding: 30px 0px 20px 0px;
     margin-bottom: 20px;
-    .title
+    .special-title
     {
         
         border-bottom: 1px solid #c4c4c4;
@@ -17,7 +17,7 @@
         {
             flex-direction: column;
         }
-        .left
+        .special-title__left
         {
             h2 
             {
@@ -28,7 +28,7 @@
                 }
             }
         }
-        .right
+        .special-title__right
         {
             display: flex;
             justify-content: space-between;
@@ -74,7 +74,7 @@
             }
         }
     }
-    .products
+    .special-products
     {
         .row 
         {

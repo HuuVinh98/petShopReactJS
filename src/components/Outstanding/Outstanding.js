@@ -8,13 +8,13 @@ import exfish from "../../images/exfish.png";
 export default function Outstanding()
 {
     return (
-        <section className="material">
-            <div className="container">
-                <div className="title">
-                    <div className="left">
+        <section className="outstanding">
+            <div className="material container">
+                <div className="material-title">
+                    <div className="material-title__left">
                         <h2>Outstanding Materials</h2>
                     </div>
-                    <div className="right">
+                    <div className="material-title__right">
                         <button><a href="">Material A</a></button>
                         <button><a href="">Material B</a></button>
                         <button><a href="">Material C</a></button>

@@ -9,14 +9,14 @@ function Products()
     return (
         <section className="products">
             <div className="container">
-                <div className="left">
+                <div className="products-left">
                     <Product
                         url={rainbow}
                         name="Rainbowfish"
                         price="$29.00"
                     ></Product>
                 </div>
-                <div className="right">
+                <div className="products-right">
                     <Product
                         url={Cichlids}
                         name="Rainbowfish"

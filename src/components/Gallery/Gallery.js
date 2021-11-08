@@ -13,7 +13,7 @@ export default function Gallery()
             <div class="container">
                 <h2>Our Gallery</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugiat excepturi nobis reprehenderit asperiores, dolor ducimus qui facilis et aspernatur quisquam!</p>
-                <div class="items">
+                <div class="images">
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="img">

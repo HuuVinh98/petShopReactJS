@@ -9,7 +9,7 @@ function Trending()
     return (
         <section class="trending">
             <div class="container">
-                <h2 class="title">Trending Products</h2>
+                <h2 class="trending-title">Trending Products</h2>
                 <div class="owl-carouse">
                     <OwlCarousel items={3}  
                         className="owl-theme"  

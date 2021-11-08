@@ -1,9 +1,9 @@
 @import "../../grid";
 
-.beautiful-products
+.beautiful
 {
     padding: 50px 0px;
-    .container
+    .beautiful-products
     {
         display: flex;
         justify-content: space-between;
@@ -13,7 +13,7 @@
             flex-direction: column;
         }
     }
-    .text
+    .beautiful-products__text
     {
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@
             }
         }
     }
-    .picture
+    .beautiful-products__picture
     {
         width: 60%;
         max-height: 300px;

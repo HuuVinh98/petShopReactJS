@@ -6,16 +6,16 @@ import {faBars,faHeart,faSearch,faShoppingBag, faHamburger} from '@fortawesome/f
 function HeaderBottom()
 {
     return (
-        <div className="header-bot ">
+        <div className="header-bottom ">
             <div className="container">
-                <div className="bar-left bar">
+                <div className="bar--left bar">
                     <FontAwesomeIcon icon={faBars} color="white" style={{fontSize:"30px"}}/>
                 </div>
                 <div className="logo">
                     <img src={logo} alt="logo"/>
                     <p>Glorious Communist Party!</p>
                 </div>
-                <form action="" className="flex">
+                <form action="">
                     <input type="text" placeholder="Search"></input>
                     <div className="search-icon "><FontAwesomeIcon icon={faSearch} color="white" style={{fontSize:"20px"}}/></div>
                 </form>
@@ -31,7 +31,7 @@ function HeaderBottom()
                         <FontAwesomeIcon icon={faShoppingBag} color="white" style={{fontSize:"30px"}}/>
                         <span className="cart-num">0</span>
                     </li>
-                    <li className="bar-right bar">
+                    <li className="bar--right bar">
                         <FontAwesomeIcon icon={faBars} color="white" style={{fontSize:"30px"}}/>
                     </li>
                 </ul>

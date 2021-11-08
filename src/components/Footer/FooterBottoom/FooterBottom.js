@@ -3,7 +3,7 @@ import "./FooterBottom.scss";
 export default function FooterBottom()
 {
     return (
-        <div className="bot">
+        <div className="footer-bottom">
             <div className="container">
                 <p>Ⓒ 2021 <span>Trung Petshop</span> Made With 💙 By <a href="#">Vinh - Nghia</a></p>
                 <div className="payment">

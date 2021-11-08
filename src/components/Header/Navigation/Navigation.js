@@ -7,11 +7,11 @@ function Navigation()
 {
     return (
         <nav className="navigation">
-            <div className="circle-1 circle">
+            <div className="circle--left circle">
                 <div className="sub-circle"></div>
             </div>
             <ul className="menu">
-                <li className="home">
+                <li className="menu_home">
                     <div>
                         <span>Home</span>
                         <FontAwesomeIcon icon={faAngleDown} />
@@ -25,7 +25,7 @@ function Navigation()
                     </ul>
                 </li>
                 <li><a href="#">About</a></li>
-                <li className="shop">
+                <li className="menu_shop">
                     <div>
                         <span>Shop</span>
                         <FontAwesomeIcon icon={faAngleDown} />
@@ -66,7 +66,7 @@ function Navigation()
                         </li>
                         <li className="cc">
                             <div className="image">
-                            <img src={exfish} alt="" />
+                                <img src={exfish} alt="" />
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </li>
@@ -75,7 +75,7 @@ function Navigation()
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <div className="circle-2 circle">
+            <div className="circle--right circle">
                 <div className="sub-circle"></div>
             </div>
         </nav>

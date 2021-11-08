@@ -17,9 +17,9 @@ function Slider()
                     margin={8} 
                     autoPlay={true}
                     autoplayTimeout={2000}
-                >  
+            >  
                     <div className="slide">
-                        <div class="text">
+                        <div class="slide__text">
                             <div class="container">
                                 <p>Welcome to Trung PetShop</p>
                                 <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -29,7 +29,7 @@ function Slider()
                         <img  className="img" src= {slide1}/>
                     </div>  
                     <div className="slide">
-                        <div class="text">
+                        <div class="slide__text">
                             <div class="container">
                                 <p>Welcome to Trung PetShop</p>
                                 <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -39,7 +39,7 @@ function Slider()
                         <img  className="img" src= {slide2}/>
                     </div>  
                     <div className="slide">
-                        <div class="text">
+                        <div class="slide__text">
                             <div class="container">
                                 <p>Welcome to Trung PetShop</p>
                                 <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>

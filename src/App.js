@@ -6,14 +6,7 @@ import './reset.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Slider from './components/Slider/Slider';
 import ScrollTop from './components/ScrollTop/ScrollTop';
-import Products from "./components/Products/Products";
-import Trending from "./components/Trending/Treding";
-import Special from "./components/Special/Special";
-import Outstanding from "./components/Outstanding/Outstanding";
-import Sale from "./components/Sale/Sale";
-import Beautiful from "./components/Beautiful/Beautiful";
-import Gallery from "./components/Gallery/Gallery";
-import Reviews from "./components/Reviews/Reviews";
+import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
 function App() {
   const [showBtn, setShowBtn] = useState(false);
@@ -28,15 +21,7 @@ function App() {
     <div className="App">
       {showBtn&&<ScrollTop />}
       <Header />
-      <Slider />
-      <Products />
-      <Trending />
-      <Special /> 
-      <Outstanding />
-      <Sale />
-      <Beautiful />
-      <Gallery />
-      <Reviews />
+      <MainContent />
       <Footer />
     </div>
   );

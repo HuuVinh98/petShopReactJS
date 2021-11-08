@@ -15,7 +15,7 @@ nav
     z-index: 10;
     left: 50%;
     transform: translateX(-50%) translateY(-15px);
-    .circle-1,.circle-2
+    .circle--left,.circle--right
     {
         display: flex;
         justify-content: center;
@@ -35,12 +35,12 @@ nav
 
         }
     }
-    .circle-1
+    .circle--left
     {
         left: 0;
         transform: translateX(-50%);
     }
-    .circle-2
+    .circle--right
     {
         right: 0;
         transform: translateX(50%);
@@ -74,7 +74,7 @@ nav
             }
             transition: all 1s;
         }
-        .home,.shop
+        .menu_home,.menu_shop
         {
             position: relative;
             transition: all 1s;
@@ -117,7 +117,7 @@ nav
                 }
             }
         }
-        .shop
+        .menu_shop
         {
             &:hover 
             {

@@ -24,7 +24,8 @@ input, button
 {
     max-width: 1150px;
     margin: 0 auto;
-    @include lg(){
+    @include lg()
+    {
         padding: 0px 3%;
     }
     @include md()

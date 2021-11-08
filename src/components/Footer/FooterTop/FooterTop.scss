@@ -1,6 +1,6 @@
 @import "../../../grid";
 
-.top
+.footer-top
     {
         display: flex;
         justify-content: space-between;
@@ -10,7 +10,7 @@
         {
             flex-direction: column;
         }
-        .first-item
+        .footer-top__left
         {
             width: 30%;
             @include xs()
@@ -63,7 +63,7 @@
                 }
             }
         }     
-        .row
+        .footer-top__right
         {
             width: 60%;
             justify-content: space-between;

@@ -1,6 +1,6 @@
 import './HeaderTop.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneAlt, faEnvelope, faUser} from '@fortawesome/free-solid-svg-icons'
+import { faPhoneAlt, faEnvelope, faUser} from '@fortawesome/free-solid-svg-icons';
 
 function HeaderTop({title,phone,email})
 {
