@@ -1,111 +1,99 @@
 @import "../../../grid";
 
-.footer-top
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        @include xs()
-        {
-            flex-direction: column;
-        }
-        .footer-top__left
-        {
-            width: 30%;
-            @include xs()
-            {
-                width: 100%;
-            }
-            ul 
-            {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                li 
-                {
-                    &:first-child
-                    {
-                        width: max-content;
-                        img 
-                        {
-                            width: 100px;
-                            height: 100px;
-                        }
-                    
-                    }
-                    &:last-child
-                    {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        @include xs()
-                        {
-                            justify-content: center;
-                        }
-                    }
-                    width: 90%;
-                    margin-bottom: 20px;
-                    span 
-                    {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-right: 10px;
-                        width: 40px;
-                        height: 40px;
-                        background-color: #504d4d;
-                        padding: 10px;
-                        border-radius: 10px;
-                       
-                    }
-                }
-            }
-        }     
-        .footer-top__right
-        {
-            width: 60%;
-            justify-content: space-between;
-            @include md()
-            {
-                width: 70%;
-            }
-            @include xs()
-            {
-                width: 100%;
-            }
-            ul
-            {
-                //margin-left: 20%;
-                
-                li 
-                {
-                    margin-left: 20%;
-                    &:first-child
-                    {
-                        font-size: 24px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                        color: #504d4d;
-                    }
-                    transition: all 0.5s;
-                    &:hover
-                    {
-                        a 
-                        {
-                            color: #266CF9;
-
-                        }
-                        margin-left: 10px;
-                    }
-                    a 
-                    {
-                        color: black;
-                        font-size: 20px;
-                        transition: all 0.5s;
-                    }
-                }
-            }
-        }
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include xs() {
+    flex-direction: column;
+  }
+  .footer-top__left {
+    width: 30%;
+    @include xs() {
+      width: 100%;
     }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        &:first-child {
+          width: max-content;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        &:last-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include xs() {
+            justify-content: center;
+          }
+        }
+        width: 90%;
+        margin-bottom: 20px;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+          border: 1px solid #a19999;
+          padding: 10px;
+          border-radius: 10px;
+          transition: all 0.5s;
+          a {
+            color: #a19999;
+          }
+          &:hover {
+            background-color: #504d4d;
+            a {
+              color: white;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-top__right {
+    width: 60%;
+    justify-content: space-between;
+    @include md() {
+      width: 70%;
+    }
+    @include xs() {
+      width: 100%;
+    }
+    ul {
+      //margin-left: 20%;
+
+      li {
+        margin-left: 20%;
+        &:first-child {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #504d4d;
+        }
+        transition: all 0.5s;
+        &:hover {
+          a {
+            color: #266cf9;
+          }
+          margin-left: 10px;
+        }
+        a {
+          color: black;
+          font-size: 20px;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

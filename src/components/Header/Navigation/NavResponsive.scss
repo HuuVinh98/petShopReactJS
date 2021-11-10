@@ -1,0 +1,111 @@
+@import "../../../grid";
+@import "../../../flex";
+.nav-responsive {
+  z-index: 13;
+  display: block;
+  height: 100vh;
+  width: 80%;
+  box-shadow: 1px 1px 10px blue;
+  @include sm() {
+    width: 95%;
+  }
+  position: fixed;
+  background-color: white;
+  padding: 10px 30px 10px 30px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: scroll;
+  > ul {
+    > li {
+      width: 100%;
+      border-bottom: 1px solid #c4c4c4;
+      padding: 15px 0px;
+      font-size: 16px;
+
+      a {
+        color: black;
+      }
+      &:first-child {
+        padding: 10px 0px;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #266bf9;
+          margin-left: 100%;
+
+          transform: translateX(-100%);
+          i {
+            color: white;
+          }
+        }
+      }
+      &:nth-child(2) {
+        ul {
+          li {
+            i {
+              color: #266bf9;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      &:last-child {
+        margin: 50px 0px;
+        ul {
+          li {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #266bf9;
+            transition: all 0.5s;
+            &:hover {
+              background-color: #333;
+            }
+
+            i {
+              color: white;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      ul {
+        margin-left: 20px;
+        li {
+          padding: 5px 0px;
+          color: black;
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+    .home,
+    .shop {
+      .dropdown {
+        display: none;
+        .cc {
+          .image {
+            width: 80%;
+            margin: 10px 0px;
+            img {
+              width: 50%;
+            }
+            border: 1px solid #c4c4c4;
+          }
+        }
+      }
+    }
+    .media {
+      width: 50%;
+      @include xs() {
+        width: 100%;
+      }
+    }
+  }
+}

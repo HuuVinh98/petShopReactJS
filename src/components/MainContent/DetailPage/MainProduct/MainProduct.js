@@ -95,7 +95,7 @@ export default function ProductInfo({
               </span>
             </div>
             <button>Add To Cart</button>
-            <div class="wishlist-btn flex j-center a-center">
+            <div class="wishlist-btn">
               <FontAwesomeIcon icon={faHeart} color="red" />
             </div>
           </div>
