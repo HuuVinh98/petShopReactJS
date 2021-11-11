@@ -57,7 +57,7 @@
   }
   .cost-tax {
     margin-top: 20px;
-    .left {
+    .cost-tax__left {
       width: 73%;
       table {
         border: 1px solid #ebeeee;
@@ -120,7 +120,7 @@
         }
       }
     }
-    .right {
+    .cost-tax__right {
       width: 25%;
       table {
         width: 100%;

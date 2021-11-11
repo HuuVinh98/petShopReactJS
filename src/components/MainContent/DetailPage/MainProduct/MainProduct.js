@@ -12,6 +12,7 @@ import {
 import gallery4 from "../../../../images/gallery4.jpg";
 
 export default function ProductInfo({
+  desc,
   name,
   price,
   weight,
@@ -22,37 +23,35 @@ export default function ProductInfo({
   return (
     <div class="main-product">
       <div class="main-product__left">
-        <div class="owl-carousel owl-theme">
-          <OwlCarousel
-            items={1}
-            className="owl-theme"
-            responsiveClass
-            loop
-            nav
-            margin={8}
-            autoPlay={true}
-            autoplayTimeout={2000}
-          >
-            <div>
-              <img src={gallery4} alt="" />
-            </div>
-            <div>
-              <img src={gallery4} alt="" />
-            </div>
-            <div>
-              <img src={gallery4} alt="" />
-            </div>
-            <div>
-              <img src={gallery4} alt="" />
-            </div>
-            <div>
-              <img src={gallery4} alt="" />
-            </div>
-            <div>
-              <img src={gallery4} alt="" />
-            </div>
-          </OwlCarousel>
-        </div>
+        <OwlCarousel
+          items={1}
+          className="owl-theme"
+          responsiveClass
+          loop
+          nav
+          margin={8}
+          autoPlay={true}
+          autoplayTimeout={2000}
+        >
+          <div>
+            <img src={gallery4} alt="" />
+          </div>
+          <div>
+            <img src={gallery4} alt="" />
+          </div>
+          <div>
+            <img src={gallery4} alt="" />
+          </div>
+          <div>
+            <img src={gallery4} alt="" />
+          </div>
+          <div>
+            <img src={gallery4} alt="" />
+          </div>
+          <div>
+            <img src={gallery4} alt="" />
+          </div>
+        </OwlCarousel>
       </div>
       <div class="main-product__right">
         <div class="right-top">
@@ -60,12 +59,7 @@ export default function ProductInfo({
           <h3>{price}</h3>
         </div>
         <div class="right-bot">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fuga
-            enim ipsam sed animi illum, officia dolorum ullam tenetur nihil
-            voluptatibus aliquam ratione fugit vitae dignissimos veniam. Error,
-            numquam? Ipsam!
-          </p>
+          <p>{desc}</p>
           <table class="product-info">
             <tr>
               <td>Weight</td>
@@ -95,7 +89,7 @@ export default function ProductInfo({
               </span>
             </div>
             <button>Add To Cart</button>
-            <div class="wishlist-btn">
+            <div class="btn-wishlist">
               <FontAwesomeIcon icon={faHeart} color="red" />
             </div>
           </div>

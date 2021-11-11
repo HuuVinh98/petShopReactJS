@@ -1,26 +1,27 @@
 import "./CartBoxItem.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinus, faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 export default function CartBoxItem({ url, name, quantity, price }) {
   return (
     <div className="cart-item flex">
-      <div className="image">
+      <div className="cart-item__image">
         <img src={url} />
       </div>
-      <div className="info flex f-column a-start">
+      <div className="cart-item__info flex f-column a-start">
         <p className="name">{name}</p>
         <div className="quantity flex a-center">
-          <span className="sub" data-id="${val.id}">
-            <i className="fas fa-minus"></i>
+          <span className="btn-minus">
+            <FontAwesomeIcon icon={faMinus} />
           </span>
           <span className="sub-quantity">{quantity}</span>
-          <span className="plus">
-            <i className="fas fa-plus"></i>
+          <span className="btn-plus">
+            <FontAwesomeIcon icon={faPlus} />
           </span>
         </div>
       </div>
       <div className="flex f-column a-end right">
         <span className="delete-item">
-          <i className="fas fa-times"></i>
+          <FontAwesomeIcon icon={faTimes} />
         </span>
         <span>
           $

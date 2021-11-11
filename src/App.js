@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Header from "./components/Header/Header";
 import "./App.css";
 import "./reset.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Slider from "./components/Slider/Slider";
-import ScrollTop from "./components/ScrollTop/ScrollTop";
+import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
-import CartBox from "./components/CartBox/CartBox";
+import ScrollTop from "./components/ModalBoxs/ScrollTop/ScrollTop";
+import CartBox from "./components/ModalBoxs/CartBox/CartBox";
+import Account from "./components/ModalBoxs/Account/Account";
+
 function App() {
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
@@ -22,8 +22,9 @@ function App() {
   return (
     <div className="App">
       {showBtn && <ScrollTop />}
+      {/* <CartBox /> */}
+      <Account />
       <Header />
-      <CartBox />
       <MainContent />
       <Footer />
     </div>

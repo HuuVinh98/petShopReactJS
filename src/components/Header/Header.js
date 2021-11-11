@@ -7,7 +7,6 @@ import { ShowMenuResponsive } from "./HeaderBottom/HeaderBottom";
 import { useContext } from "react";
 function Header() {
   const showNavResponsive = useContext(ShowMenuResponsive);
-  console.log(showNavResponsive);
   return (
     <header>
       <HeaderTop

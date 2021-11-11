@@ -37,6 +37,10 @@ export default function DetailPage() {
       <div class="product-detail">
         <div class="container">
           <MainProduct
+            desc="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fuga
+          enim ipsam sed animi illum, officia dolorum ullam tenetur nihil
+          voluptatibus aliquam ratione fugit vitae dignissimos veniam. Error,
+          numquam? Ipsam!"
             name="Vulava Fish"
             price="$30.00"
             weight="100g"

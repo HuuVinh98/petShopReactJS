@@ -8,7 +8,7 @@ export default function ShoppingCart() {
       <div class="container">
         <div class="content">
           <h1>Shopping Cart</h1>
-          <div id="shopping-products">
+          <div id="shopping-list">
             <table>
               <tr style={{ borderBottom: "1px solid #ebeeee" }}>
                 <td>PRODUC DETAILS</td>
@@ -25,7 +25,7 @@ export default function ShoppingCart() {
             </table>
           </div>
 
-          <div class="two-button flex j-spaceBetween">
+          <div class="cart-option flex j-spaceBetween">
             <button id="clear-cart">Clear cart</button>
             <button id="update-cart">Update shopping cart</button>
           </div>

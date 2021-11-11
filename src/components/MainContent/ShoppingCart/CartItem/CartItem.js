@@ -17,11 +17,11 @@ export default function CartItem({ url, name, price, quantity }) {
       <td>{price}</td>
       <td>
         <div className="quantity flex a-center j-spaceBetween">
-          <span className="cart-sub">
+          <span className="quantiy__minus">
             <FontAwesomeIcon icon={faMinus} />
           </span>
-          <span className="cart-sub-quantity">{quantity}</span>
-          <span className="cart-plus">
+          <span className="quantity__number">{quantity}</span>
+          <span className="quantity__plus">
             <FontAwesomeIcon icon={faPlus} />
           </span>
         </div>
@@ -38,7 +38,7 @@ export default function CartItem({ url, name, price, quantity }) {
         </span>
       </td>
       <td>
-        <span className="delete-product">
+        <span className="btn-delete">
           <FontAwesomeIcon icon={faTimes} />
         </span>
       </td>

@@ -18,7 +18,7 @@ export default function Payment() {
       </div>
 
       <div class="cost-tax flex j-spaceBetween">
-        <div class="left">
+        <div class="cost-tax__left">
           <table>
             <tr>
               <td>Estimate shipping and tax</td>
@@ -106,7 +106,7 @@ export default function Payment() {
             </tr>
           </table>
         </div>
-        <div class="right">
+        <div class="cost-tax__right">
           <table>
             <tr>
               <td>Grand total</td>
