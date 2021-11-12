@@ -2,6 +2,8 @@ import "./Navigation.scss";
 import exfish from "./exfish.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 function Navigation() {
   return (
     <nav className="navigation">
@@ -9,31 +11,8 @@ function Navigation() {
         <div className="sub-circle"></div>
       </div>
       <ul className="menu">
-        <li className="menu_home">
-          <div>
-            <span>Home</span>
-            <FontAwesomeIcon icon={faAngleDown} />
-          </div>
-          <ul className="dropdown f-column">
-            <li>
-              <a href="#">Home 1</a>
-            </li>
-            <li>
-              <a href="#">Home 2</a>
-            </li>
-            <li>
-              <a href="#">Home 3</a>
-            </li>
-            <li>
-              <a href="#">Home 4</a>
-            </li>
-            <li>
-              <a href="#">Home 5</a>
-            </li>
-          </ul>
-        </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/">Home</Link>
         </li>
         <li className="menu_shop">
           <div>
@@ -110,10 +89,13 @@ function Navigation() {
           </ul>
         </li>
         <li>
-          <a href="#">Service</a>
+          <Link to="/service">Service</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
         </li>
       </ul>
       <div className="circle--right circle">

@@ -8,6 +8,8 @@ import ScrollTop from "./components/ModalBoxs/ScrollTop/ScrollTop";
 import CartBox from "./components/ModalBoxs/CartBox/CartBox";
 import Account from "./components/ModalBoxs/Account/Account";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function App() {
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
@@ -20,14 +22,16 @@ function App() {
     };
   }, [showBtn]);
   return (
-    <div className="App">
-      {showBtn && <ScrollTop />}
-      {/* <CartBox /> */}
-      <Account />
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        {showBtn && <ScrollTop />}
+        {/* <CartBox /> */}
+        {/* <Account /> */}
+        <Header />
+        <MainContent />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
