@@ -1,6 +1,7 @@
 import "./Payment.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGift } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 export default function Payment() {
   return (
     <div className="payment">
@@ -129,7 +130,9 @@ export default function Payment() {
                     style={{ color: "#2c2c2c", fontSize: "18px" }}
                   ></span>
                 </p>
-                <button class="checkout">CHECKOUT</button>
+                <button class="checkout">
+                  <Link to="/checkout">CHECKOUT</Link>
+                </button>
               </td>
             </tr>
           </table>

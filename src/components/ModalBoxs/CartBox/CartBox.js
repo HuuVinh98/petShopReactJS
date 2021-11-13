@@ -25,14 +25,10 @@ export default function CartBox() {
           <span id="subtotal" style={{ fontSize: "20px" }}></span>
         </div>
         <button className="flex j-center a-center">
-          <a href="#" target="_blank">
-            View Cart
-          </a>
+          <a href="/cart">View Cart</a>
         </button>
         <button className="flex j-center a-center">
-          <a href="#" target="_blank">
-            Checkout
-          </a>
+          <a href="/checkout">Checkout</a>
         </button>
       </div>
     </div>

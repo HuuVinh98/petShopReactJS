@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/ModalBoxs/ScrollTop/ScrollTop";
 import CartBox from "./components/ModalBoxs/CartBox/CartBox";
 import Account from "./components/ModalBoxs/Account/Account";
-
+import SearchBox from "./components/ModalBoxs/SearchBox/SearchBox";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
         {showBtn && <ScrollTop />}
         {/* <CartBox /> */}
         {/* <Account /> */}
+        <SearchBox />
         <Header />
         <MainContent />
         <Footer />

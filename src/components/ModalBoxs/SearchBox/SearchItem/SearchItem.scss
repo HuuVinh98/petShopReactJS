@@ -1,24 +1,40 @@
-@import "../../../grid";
-.item {
+@import "../../../../grid";
+@import "../../../../flex";
+
+.search-item {
   overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  width: 90%;
-  border: 2px solid #c4c4c4;
-  border-radius: 10%;
+  @include sm() {
+    padding: 5px;
+  }
+  @include xs() {
+    padding: 2px;
+  }
+
+  width: 20%;
+  border: 1px solid #c4c4c4;
+  margin: 5px;
+  border-radius: 5px;
+  height: max-content;
+  background-image: radial-gradient(#f0edf5, #95afec, rgb(122, 123, 236));
   img {
     transition: all 0.5s;
+    width: 100%;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
-  .text {
+  .search-item__info {
     text-align: center;
     h2 {
       font-size: 20px;
-      color: #333;
+      color: rgb(119, 115, 115);
+      @media screen and (max-width: 635px) {
+        font-size: 12px;
+      }
     }
     h3 {
       color: red;

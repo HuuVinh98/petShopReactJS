@@ -8,15 +8,16 @@ import {
   faLinkedin,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 export default function FooterTop() {
   return (
     <div className="footer-top">
       <div className="footer-top__left">
         <ul>
           <li>
-            <a href="">
+            <Link to="/">
               <img src={logo} alt="" />
-            </a>
+            </Link>
           </li>
           <li style={{ textAlign: "center" }}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et

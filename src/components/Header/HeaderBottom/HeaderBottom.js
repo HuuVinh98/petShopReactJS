@@ -9,6 +9,7 @@ import {
   faHamburger,
 } from "@fortawesome/free-solid-svg-icons";
 import { createContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const ShowMenuResponsive = createContext();
 function HeaderBottom() {
@@ -31,7 +32,9 @@ function HeaderBottom() {
             />
           </div>
           <div className="logo">
-            <img src={logo} alt="logo" />
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
             <p>Glorious Communist Party!</p>
           </div>
           <form action="">
@@ -53,11 +56,13 @@ function HeaderBottom() {
               />
             </li>
             <li className="wishlist">
-              <FontAwesomeIcon
-                icon={faHeart}
-                color="white"
-                style={{ fontSize: "30px" }}
-              />
+              <a href="/wishlist">
+                <FontAwesomeIcon
+                  icon={faHeart}
+                  color="white"
+                  style={{ fontSize: "30px" }}
+                />
+              </a>
               <span className="wishlist-num">0</span>
             </li>
             <li className="cart">
