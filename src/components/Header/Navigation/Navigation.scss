@@ -6,13 +6,13 @@ nav {
   }
   justify-content: center;
   align-items: center;
-  background-color: #266bf9;
-  width: 55%;
+  background-color: #f3d34a;
+  width: 45%;
   height: 50px;
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%) translateY(-15px);
+  position: relative;
+  // z-index: 10;
+  // left: 50%;
+  // transform: translateX(-50%) translateY(-px);
   .circle--left,
   .circle--right {
     display: flex;
@@ -23,12 +23,12 @@ nav {
     height: 50px;
     background-color: white;
     border-radius: 50%;
-    background-color: #266bf9;
+    background-color: #f3d34a;
     .sub-circle {
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: #212529;
+      background-color: white;
     }
   }
   .circle--left {
@@ -53,14 +53,14 @@ nav {
       align-items: center;
       a,
       div {
-        font-size: 24px;
+        font-size: 20px;
         color: white;
         i {
           font-size: 20px;
         }
       }
       &:hover {
-        background-color: #0847c5;
+        background-color: #f3a738;
       }
       transition: all 1s;
     }

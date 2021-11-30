@@ -27,7 +27,7 @@ function App() {
         {showBtn && <ScrollTop />}
         {/* <CartBox /> */}
         {/* <Account /> */}
-        <SearchBox />
+        {/* <SearchBox /> */}
         <Header />
         <MainContent />
         <Footer />

@@ -1,6 +1,9 @@
 import "./HeaderBottom.scss";
-import logo from "./logo.png";
+import logo from "../../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Navigation from "../Navigation/Navigation";
+import NavResponsive from "../Navigation/NavResponsive";
+
 import {
   faBars,
   faHeart,
@@ -8,36 +11,24 @@ import {
   faShoppingBag,
   faHamburger,
 } from "@fortawesome/free-solid-svg-icons";
-import { createContext, useState } from "react";
 import { Link } from "react-router-dom";
-
-export const ShowMenuResponsive = createContext();
 function HeaderBottom() {
-  const [showMenu, setShowMenu] = useState(false);
   return (
-    <ShowMenuResponsive.Provider value={showMenu}>
-      <div className="header-bottom ">
-        <div className="container">
-          <div
-            className="bar--left bar"
-            onClick={() => {
-              setShowMenu(!showMenu);
-              console.log(showMenu);
-            }}
-          >
-            <FontAwesomeIcon
-              icon={faBars}
-              color="white"
-              style={{ fontSize: "30px" }}
-            />
-          </div>
-          <div className="logo">
-            <Link to="/">
-              <img src={logo} alt="logo" />
-            </Link>
-            <p>Glorious Communist Party!</p>
-          </div>
-          <form action="">
+    <div className="header-bottom ">
+      <div className="container">
+        <div className="bar--left bar">
+          <FontAwesomeIcon
+            icon={faBars}
+            color="white"
+            style={{ fontSize: "30px" }}
+          />
+        </div>
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
+        </div>
+        {/* <form action="">
             <input type="text" placeholder="Search"></input>
             <div className="search-icon ">
               <FontAwesomeIcon
@@ -46,50 +37,52 @@ function HeaderBottom() {
                 style={{ fontSize: "20px" }}
               />
             </div>
-          </form>
-          <ul>
-            <li className="search">
+          </form> */}
+
+        <Navigation />
+
+        <ul className="icons">
+          <li className="icons__search">
+            <div>
               <FontAwesomeIcon
                 icon={faSearch}
-                color="white"
-                style={{ fontSize: "30px" }}
+                color="#333"
+                style={{ fontSize: "18px" }}
               />
-            </li>
-            <li className="wishlist">
+            </div>
+          </li>
+          <li className="icons__wishlist">
+            <div>
               <a href="/wishlist">
                 <FontAwesomeIcon
                   icon={faHeart}
-                  color="white"
-                  style={{ fontSize: "30px" }}
+                  color="#333"
+                  style={{ fontSize: "18px" }}
                 />
               </a>
               <span className="wishlist-num">0</span>
-            </li>
-            <li className="cart">
+            </div>
+          </li>
+          <li className="icons__cart">
+            <div>
               <FontAwesomeIcon
                 icon={faShoppingBag}
-                color="white"
-                style={{ fontSize: "30px" }}
+                color="#333"
+                style={{ fontSize: "18px" }}
               />
               <span className="cart-num">0</span>
-            </li>
-            <li
-              className="bar--right bar"
-              onClick={() => {
-                setShowMenu(!showMenu);
-                console.log(showMenu);
-              }}
-            >
-              <FontAwesomeIcon
-                icon={faBars}
-                color="white"
-                style={{ fontSize: "30px" }}
-              />
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+          <li className="bar--right bar">
+            <FontAwesomeIcon
+              icon={faBars}
+              color="#333"
+              style={{ fontSize: "30px" }}
+            />
+          </li>
+        </ul>
       </div>
-    </ShowMenuResponsive.Provider>
+    </div>
   );
 }
 

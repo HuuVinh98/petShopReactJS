@@ -5,7 +5,6 @@ import {
   faFacebookF,
   faYoutube,
   faInstagram,
-  faLinkedin,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";

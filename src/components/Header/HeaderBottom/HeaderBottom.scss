@@ -1,6 +1,6 @@
 @import "../../../grid";
 .header-bottom {
-  padding: 20px 0px;
+  padding: 10px 0px;
   .container {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@
         margin-left: 20px;
       }
       img {
-        width: 100px;
+        width: 150px;
         height: 100px;
       }
       p {
@@ -74,13 +74,14 @@
         border-bottom-right-radius: 10px;
       }
     }
-    ul {
-      width: 10%;
+
+    ul.icons {
+      width: 15%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       @include md() {
-        width: 20%;
+        width: 30%;
       }
       @include sm() {
         min-width: 25%;
@@ -91,37 +92,46 @@
       @media screen and (max-width: 500px) {
         width: 40%;
       }
-      .search {
-        display: none;
-        @include sm() {
-          display: block;
-        }
-      }
       li {
-        position: relative;
-
-        i {
-          color: white;
-          font-size: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #c4c4c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+        &:hover {
+          background-color: #eea243;
+          border-color: white;
         }
-        span {
-          position: absolute;
-          top: -5px;
-          left: 18px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #266bf9;
-          color: white;
-          width: 25px;
-          height: 25px;
-          border-radius: 50%;
+        // i {
+        //   color: white;
+        //   font-size: 30px;
+        // }
+        div {
+          position: relative;
+          span {
+            position: absolute;
+            top: -5px;
+            left: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3e37c;
+            color: white;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-size: 10px;
+          }
         }
       }
       .bar--right {
         display: none;
+        border: none;
         @include md() {
-          display: block;
+          display: flex;
         }
         @include sm() {
           display: none;
