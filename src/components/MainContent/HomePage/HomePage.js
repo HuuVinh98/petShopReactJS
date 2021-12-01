@@ -3,24 +3,22 @@ import Products from "../../Products/Products";
 import Trending from "../../Trending/Treding";
 import Special from "../../Special/Special";
 import Outstanding from "../../Outstanding/Outstanding";
-import Sale from "../../Sale/Sale";
+import Promotion from "../../Promotion/Promotion";
 import Beautiful from "../../Beautiful/Beautiful";
 import Gallery from "../../Gallery/Gallery";
-import Reviews from "../../Reviews/Reviews"
-export default function HomePage()
-{
-    return (
-        <div className="home-page">
-            <Slider />
-            <Products />
-            <Trending />
-            <Special /> 
-            <Outstanding />
-            <Sale />
-            <Beautiful />
-            <Gallery />
-            <Reviews />
-        </div>
+import Reviews from "../../Reviews/Reviews";
+export default function HomePage() {
+  return (
+    <div className="home-page">
+      <Slider />
+      <Promotion />
+      <Trending />
+      <Special />
+      <Outstanding />
 
-    )
+      <Beautiful />
+      <Gallery />
+      <Reviews />
+    </div>
+  );
 }

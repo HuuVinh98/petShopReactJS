@@ -2,7 +2,7 @@ import "./HeaderBottom.scss";
 import logo from "../../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navigation from "../Navigation/Navigation";
-import NavResponsive from "../Navigation/NavResponsive";
+import NavResponsive from "../Navigation/MenuResponsive";
 
 import {
   faBars,
@@ -10,6 +10,8 @@ import {
   faSearch,
   faShoppingBag,
   faHamburger,
+  faShippingFast,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 function HeaderBottom() {
@@ -19,7 +21,7 @@ function HeaderBottom() {
         <div className="bar--left bar">
           <FontAwesomeIcon
             icon={faBars}
-            color="white"
+            color="#333"
             style={{ fontSize: "30px" }}
           />
         </div>
@@ -28,20 +30,22 @@ function HeaderBottom() {
             <img src={logo} alt="logo" />
           </Link>
         </div>
-        {/* <form action="">
-            <input type="text" placeholder="Search"></input>
-            <div className="search-icon ">
-              <FontAwesomeIcon
-                icon={faSearch}
-                color="white"
-                style={{ fontSize: "20px" }}
-              />
-            </div>
-          </form> */}
 
         <Navigation />
 
         <ul className="icons">
+          <li className="icons__shipping">
+            <FontAwesomeIcon
+              icon={faShippingFast}
+              color="#eea243"
+              style={{ fontSize: "40px" }}
+              className="fa-icon"
+            />
+            <div className="text">
+              <p>Call and Order In</p>
+              <h3>+1234-457-890</h3>
+            </div>
+          </li>
           <li className="icons__search">
             <div>
               <FontAwesomeIcon
@@ -65,11 +69,13 @@ function HeaderBottom() {
           </li>
           <li className="icons__cart">
             <div>
-              <FontAwesomeIcon
-                icon={faShoppingBag}
-                color="#333"
-                style={{ fontSize: "18px" }}
-              />
+              <a href="/cart">
+                <FontAwesomeIcon
+                  icon={faShoppingBag}
+                  color="#333"
+                  style={{ fontSize: "18px" }}
+                />
+              </a>
               <span className="cart-num">0</span>
             </div>
           </li>
@@ -81,6 +87,13 @@ function HeaderBottom() {
             />
           </li>
         </ul>
+
+        <FontAwesomeIcon
+          icon={faPhone}
+          color="#333"
+          style={{ fontSize: "30px" }}
+          className="fa-phone"
+        />
       </div>
     </div>
   );

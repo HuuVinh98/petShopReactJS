@@ -10,7 +10,15 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-function HeaderTop({ phone, location }) {
+function HeaderTop({
+  phone,
+  location,
+  linkFacebook,
+  linIns,
+  linkYoutube,
+  linkTwitter,
+  linkIn,
+}) {
   return (
     <div className="header-top ">
       <div className="container">
@@ -34,44 +42,54 @@ function HeaderTop({ phone, location }) {
         </ul>
         <ul>
           <li>
-            <FontAwesomeIcon
-              icon={faFacebook}
-              color="white"
-              style={{ marginRight: "10px" }}
-              className="fa-icon"
-            ></FontAwesomeIcon>
+            <a href={linkFacebook}>
+              <FontAwesomeIcon
+                icon={faFacebook}
+                color="white"
+                style={{ marginRight: "10px" }}
+                className="fa-icon"
+              ></FontAwesomeIcon>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faInstagram}
-              color="white"
-              style={{ marginRight: "10px" }}
-              className="fa-icon"
-            ></FontAwesomeIcon>
+            <a href={linIns}>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                color="white"
+                style={{ marginRight: "10px" }}
+                className="fa-icon"
+              ></FontAwesomeIcon>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="white"
-              style={{ marginRight: "10px" }}
-              className="fa-icon"
-            ></FontAwesomeIcon>
+            <a href={linkYoutube}>
+              <FontAwesomeIcon
+                icon={faYoutube}
+                color="white"
+                style={{ marginRight: "10px" }}
+                className="fa-icon"
+              ></FontAwesomeIcon>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faTwitter}
-              color="white"
-              style={{ marginRight: "10px" }}
-              className="fa-icon"
-            ></FontAwesomeIcon>
+            <a href={linkTwitter}>
+              <FontAwesomeIcon
+                icon={faTwitter}
+                color="white"
+                style={{ marginRight: "10px" }}
+                className="fa-icon"
+              ></FontAwesomeIcon>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="white"
-              style={{ marginRight: "10px" }}
-              className="fa-icon"
-            ></FontAwesomeIcon>
+            <a href={linkIn}>
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                color="white"
+                style={{ marginRight: "10px" }}
+                className="fa-icon"
+              ></FontAwesomeIcon>
+            </a>
           </li>
         </ul>
       </div>
