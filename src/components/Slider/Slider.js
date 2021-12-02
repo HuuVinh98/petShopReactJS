@@ -5,7 +5,8 @@ import "./Slider.scss";
 import slide1 from "./slide1.png";
 import slide2 from "./slide2.png";
 import slide3 from "./slide3.png";
-
+import Slide from "./Slide/Slide";
+import mucrim from "../../images/mucrim.png";
 function Slider() {
   return (
     <div className="slider">
@@ -18,7 +19,19 @@ function Slider() {
         autoPlay={true}
         autoplayTimeout={2000}
       >
-        <div className="slide">
+        <Slide
+          text="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          img={mucrim}
+        />
+        <Slide
+          text="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          img={mucrim}
+        />
+        <Slide
+          text="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          img={mucrim}
+        />
+        {/* <div className="slide">
           <div class="slide__text">
             <div class="container">
               <p>Welcome to VN Snack</p>
@@ -53,7 +66,7 @@ function Slider() {
             </div>
           </div>
           <img className="img" src={slide3} />
-        </div>
+        </div> */}
       </OwlCarousel>
     </div>
   );

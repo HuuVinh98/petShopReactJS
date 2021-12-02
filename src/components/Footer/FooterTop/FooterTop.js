@@ -6,6 +6,7 @@ import {
   faYoutube,
   faInstagram,
   faLinkedinIn,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 export default function FooterTop() {
@@ -27,6 +28,14 @@ export default function FooterTop() {
               <a href="">
                 <FontAwesomeIcon
                   icon={faFacebookF}
+                  style={{ fontSize: "20px" }}
+                />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <FontAwesomeIcon
+                  icon={faTwitter}
                   style={{ fontSize: "20px" }}
                 />
               </a>

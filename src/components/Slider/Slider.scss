@@ -7,103 +7,9 @@
 .slider {
   width: 100%;
   height: max-content;
-
-  .slide {
-    height: 100%;
-    position: relative;
-    width: 100%;
-    .slide__text {
-      width: 100%;
-      position: absolute;
-      top: 35%;
-      @include lg() {
-        top: 15%;
-      }
-      @include md() {
-        left: 8%;
-        top: 10%;
-      }
-      @include xs() {
-        top: 20%;
-      }
-      @media (max-width: 450px) {
-        top: 10%;
-      }
-      left: 15%;
-      animation: shaky 1s infinite alternate;
-      .container {
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        @include xs() {
-          height: 100px;
-        }
-        p {
-          color: white;
-        }
-        h1 {
-          font-size: 36px;
-          color: #f3d34a;
-          width: 40%;
-          @include md() {
-            font-size: 24px;
-          }
-          @include sm() {
-            width: 60%;
-          }
-          @include xs() {
-            font-size: 16px;
-          }
-        }
-        button {
-          margin-top: 50px;
-          @include lg() {
-            margin-top: 20px;
-          }
-          @include xs() {
-            margin-top: 10px;
-          }
-          &:hover {
-            border-color: red;
-          }
-          transition: all 0.5s;
-          width: 20%;
-          @include md() {
-            width: 25%;
-          }
-          @include sm() {
-            width: max-content;
-          }
-          @include xs() {
-            padding: 5px;
-          }
-          padding: 20px;
-          background: none;
-          border: 1px dashed white;
-          border-radius: 10px;
-          a {
-            font-size: 24px;
-            @include xs() {
-              font-size: 16px;
-            }
-            color: white;
-            font-style: italic;
-            transition: all 0.5s;
-            &:hover {
-              color: red;
-            }
-          }
-
-          margin-left: 50px;
-        }
-      }
-    }
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
+  background-image: url("../../images/slide_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   .owl-dots {
     position: absolute;
     bottom: 2%;
@@ -111,7 +17,7 @@
     transform: translateX(-50%);
     button.owl-dot.active {
       span {
-        background-color: blue !important;
+        background-color: #00a149 !important;
       }
     }
   }
@@ -120,12 +26,12 @@
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 95%;
     @include md() {
-      width: 90%;
+      width: 98%;
     }
     @include sm() {
-      width: 93%;
+      width: 99%;
     }
     display: flex;
     justify-content: space-between;
@@ -146,7 +52,7 @@
       background-color: white !important;
       transition: all 0.5s;
       &:hover {
-        background-color: purple !important;
+        background-color: #eea243 !important;
         span {
           color: white;
         }
