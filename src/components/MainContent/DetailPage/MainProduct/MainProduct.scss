@@ -12,9 +12,10 @@
     }
     .owl-carousel {
       display: block;
-      border: 2px solid #c4c4c4;
+      border: 1px solid #c4c4c4;
       padding: 20px;
       border-radius: 5%;
+      background-color: #f3e37c;
       width: 100%;
       div {
         width: 100%;
@@ -36,6 +37,13 @@
       padding: 20px 0px 0px;
     }
     .right-top {
+      h2 {
+        color: #00a149;
+      }
+      h3 {
+        color: #ffc222;
+        font-size: 32px;
+      }
       padding-bottom: 20px;
       border-bottom: 1px solid #c4c4c4;
       @include sm() {
@@ -50,14 +58,16 @@
       @include sm() {
         align-items: center;
       }
-      .product-info {
+      table.product-info {
         padding: 20px 0px;
         tr {
           td {
             font-weight: bolder;
+            padding: 0 !important;
+
             &:first-child {
               width: 150px;
-              color: #266bf9;
+              color: #00a149;
             }
           }
         }
@@ -70,13 +80,13 @@
         .quantity {
           display: flex;
           border-radius: 5px;
-          background-color: #494545;
+          background-color: #f0e7e7;
           margin-right: 20px;
           border: none;
           span {
             padding: 10px;
             font-size: 16px;
-            color: white;
+            color: #333;
             font-weight: bolder;
           }
         }
@@ -86,7 +96,7 @@
           padding: 10px;
           font-size: 18px;
           color: white;
-          background-color: #266bf9;
+          background-color: #f3e37c;
           transition: all 0.5s;
           &:hover {
             background-color: #333;
@@ -99,7 +109,7 @@
           justify-content: center;
           align-items: center;
           padding: 10px;
-          background-color: #494545;
+          background-color: #f0e7e7;
           border-radius: 5px;
           i {
             font-size: 18px;

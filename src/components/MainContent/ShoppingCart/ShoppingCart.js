@@ -1,7 +1,7 @@
 import "./ShoppingCart.scss";
 import CartItem from "./CartItem/CartItem";
 import Payment from "./Payment/Payment";
-import exfish from "../../../images/exfish.png";
+import exfish from "../../../images/mucrim.png";
 export default function ShoppingCart() {
   return (
     <div class="shopping-cart">
@@ -18,7 +18,7 @@ export default function ShoppingCart() {
               </tr>
               <CartItem
                 url={exfish}
-                name="Vulva Fish"
+                name="Squid Married Satay"
                 price="$30"
                 quantity={3}
               ></CartItem>

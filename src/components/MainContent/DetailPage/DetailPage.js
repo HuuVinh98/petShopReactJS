@@ -2,19 +2,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleRight,
-  faMinus,
-  faPlus,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
-import Item from "../../Trending/Item/Item";
-import exfish from "../../../images/exfish.png";
-import slide1 from "../../../images/gallery1.jpg";
-import slide2 from "../../../images/gallery2.jpg";
-import slide3 from "../../../images/gallery3.jpg";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import mucrim from "../../../images/mucrim.png";
 import MainProduct from "./MainProduct/MainProduct";
-
+import Item from "../../Popular/Item/Item";
 import "./DetailPage.scss";
 export default function DetailPage() {
   return (
@@ -26,11 +17,11 @@ export default function DetailPage() {
             <FontAwesomeIcon icon={faAngleRight} color="blue" />
           </a>
           <a href="#">
-            <span>Special Products</span>
+            <span>Products</span>
             <FontAwesomeIcon icon={faAngleRight} color="blue" />
           </a>
           <a href="#">
-            <span>Vulva Fish</span>
+            <span>Rice paper mix</span>
           </a>
         </div>
       </div>
@@ -41,12 +32,13 @@ export default function DetailPage() {
           enim ipsam sed animi illum, officia dolorum ullam tenetur nihil
           voluptatibus aliquam ratione fugit vitae dignissimos veniam. Error,
           numquam? Ipsam!"
-            name="Vulava Fish"
+            name="Rice paper mix"
             price="$30.00"
             weight="100g"
-            demension="2x2 cm"
-            age="2 days"
-            food="Rice, bean,..."
+            material="egg, ricepaper, mango,chilli,.."
+            origin="Vietnam"
+            mfg="2/12/2021"
+            exp="2 months"
           ></MainProduct>
 
           <div class="related-products">
@@ -83,11 +75,41 @@ export default function DetailPage() {
                 autoPlay={true}
                 autoplayTimeout={2000}
               >
-                <Item name="Vulva Fish" price="$30.00" url={exfish}></Item>
-                <Item name="Vulva Fish" price="$30.00" url={exfish}></Item>
-                <Item name="Vulva Fish" price="$30.00" url={exfish}></Item>
-                <Item name="Vulva Fish" price="$30.00" url={exfish}></Item>
-                <Item name="Vulva Fish" price="$30.00" url={exfish}></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
+                <Item
+                  name="Rice paper mix"
+                  desc="How are you? I'm fine, thank you. And you?"
+                  url={mucrim}
+                ></Item>
               </OwlCarousel>
             </div>
           </div>

@@ -2,10 +2,9 @@ import Slider from "../../Slider/Slider";
 import Outstanding from "../../Outstanding/Outstanding";
 import Promotion from "../../Promotion/Promotion";
 import Popular from "../../Popular/Popular";
-import Beautiful from "../../Beautiful/Beautiful";
-import Gallery from "../../Gallery/Gallery";
 import Reviews from "../../Reviews/Reviews";
 import Menus from "../../Menus/Menus";
+import Video from "../../Video/Video";
 export default function HomePage() {
   return (
     <div className="home-page">
@@ -13,8 +12,8 @@ export default function HomePage() {
       <Menus />
       <Promotion />
       <Popular />
-      <Gallery />
       <Reviews />
+      <Video />
     </div>
   );
 }

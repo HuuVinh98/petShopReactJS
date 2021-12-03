@@ -1,7 +1,13 @@
 import "./Navigation.scss";
 import exfish from "./exfish.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faAngleLeft,
+  faAngleRight,
+  faAngleUp,
+} from "@fortawesome/free-solid-svg-icons";
+import vietnamfood from "../../../images/vietnamfood.jpg";
 import { Link } from "react-router-dom";
 
 function Navigation() {
@@ -20,71 +26,281 @@ function Navigation() {
             <FontAwesomeIcon icon={faAngleDown} />
           </div>
           <ul className="dropdown">
-            <li>
-              <ul>
-                <li>Fish</li>
-                <li>
-                  <a href="#">Fish 1</a>
-                </li>
-                <li>
-                  <a href="#">Fish 2</a>
-                </li>
-                <li>
-                  <a href="#">Fish 3</a>
-                </li>
-                <li>
-                  <a href="#">Fish 4</a>
-                </li>
-                <li>
-                  <a href="#">Fish 5</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>Hamster</li>
-                <li>
-                  <a href="#">Hamster 1</a>
-                </li>
-                <li>
-                  <a href="#">Hamster 2</a>
-                </li>
-                <li>
-                  <a href="#">Hamster 3</a>
-                </li>
-                <li>
-                  <a href="#">Hamster 4</a>
-                </li>
-                <li>
-                  <a href="#">Hamster 5</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>Bird</li>
-                <li>
-                  <a href="">Bird 1</a>
-                </li>
-                <li>
-                  <a href="">Bird 2</a>
-                </li>
-                <li>
-                  <a href="">Bird 3</a>
-                </li>
-                <li>
-                  <a href="">Bird 4</a>
-                </li>
-                <li>
-                  <a href="">Bird 5</a>
-                </li>
-              </ul>
-            </li>
-            <li className="cc">
-              <div className="image">
-                <img src={exfish} alt="" />
+            <li className="dropdown__item flex j-spaceBetween a-center">
+              <span>Combo</span>
+              <FontAwesomeIcon icon={faAngleRight} color="#00a149" />
+              <div className="drop-right flex j-spaceBetween">
+                <div className=" flex f-column">
+                  <h3>Combo</h3>
+                  <div className="drop-right__menu flex j-spaceBetween">
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src={vietnamfood}></img>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li className="dropdown__item flex j-spaceBetween a-center">
+              <span>Combo</span>
+              <FontAwesomeIcon icon={faAngleRight} color="#00a149" />
+              <div className="drop-right flex j-spaceBetween">
+                <div className=" flex f-column">
+                  <h3>Combo</h3>
+                  <div className="drop-right__menu flex j-spaceBetween">
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src={vietnamfood}></img>
+              </div>
+            </li>
+            <li className="dropdown__item flex j-spaceBetween a-center">
+              <span>Combo</span>
+              <FontAwesomeIcon icon={faAngleRight} color="#00a149" />
+              <div className="drop-right flex j-spaceBetween">
+                <div className=" flex f-column">
+                  <h3>Combo</h3>
+                  <div className="drop-right__menu flex j-spaceBetween">
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src={vietnamfood}></img>
+              </div>
+            </li>
+            <li className="dropdown__item flex j-spaceBetween a-center">
+              <span>Combo</span>
+              <FontAwesomeIcon icon={faAngleRight} color="#00a149" />
+              <div className="drop-right flex j-spaceBetween">
+                <div className=" flex f-column">
+                  <h3>Combo</h3>
+                  <div className="drop-right__menu flex j-spaceBetween">
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src={vietnamfood}></img>
+              </div>
+            </li>
+            <li className="dropdown__item flex j-spaceBetween a-center">
+              <span>Combo</span>
+              <FontAwesomeIcon icon={faAngleRight} color="#00a149" />
+              <div className="drop-right flex j-spaceBetween">
+                <div className=" flex f-column">
+                  <h3>Combo</h3>
+                  <div className="drop-right__menu flex j-spaceBetween">
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src={vietnamfood}></img>
+              </div>
+            </li>
+            <li className="dropdown__item flex j-spaceBetween a-center">
+              <span>Combo</span>
+              <FontAwesomeIcon icon={faAngleRight} color="#00a149" />
+              <div className="drop-right flex j-spaceBetween">
+                <div className=" flex f-column">
+                  <h3>Combo</h3>
+                  <div className="drop-right__menu flex j-spaceBetween">
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                      <li>
+                        <a href="#">Combo A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src={vietnamfood}></img>
+              </div>
             </li>
           </ul>
         </li>

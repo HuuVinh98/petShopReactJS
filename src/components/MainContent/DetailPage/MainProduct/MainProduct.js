@@ -9,16 +9,17 @@ import {
   faPlus,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
-import gallery4 from "../../../../images/gallery4.jpg";
+import gallery4 from "../../../../images/ricepapermix.jpg";
 
 export default function ProductInfo({
   desc,
   name,
   price,
   weight,
-  demension,
-  age,
-  food,
+  material,
+  origin,
+  exp,
+  mfg,
 }) {
   return (
     <div class="main-product">
@@ -62,20 +63,24 @@ export default function ProductInfo({
           <p>{desc}</p>
           <table class="product-info">
             <tr>
-              <td>Weight</td>
+              <td>Weight:</td>
               <td>{weight}</td>
             </tr>
             <tr>
-              <td>Dimensions</td>
-              <td>{demension}</td>
+              <td>Meterial:</td>
+              <td>{material}</td>
             </tr>
             <tr>
-              <td>Age</td>
-              <td>{age}</td>
+              <td>Origin:</td>
+              <td>{origin}</td>
             </tr>
             <tr>
-              <td>Foods</td>
-              <td>{food}</td>
+              <td>MFG:</td>
+              <td>{mfg}</td>
+            </tr>
+            <tr>
+              <td>EXP:</td>
+              <td>{exp}</td>
             </tr>
           </table>
           <div class="product-quantity">
