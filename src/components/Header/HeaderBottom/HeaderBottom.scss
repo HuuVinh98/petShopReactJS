@@ -172,3 +172,14 @@
     }
   }
 }
+
+.modal-dialog {
+  background-color: #f3e37c;
+  height: 100vh;
+  .modal-content {
+    height: 100%;
+    .modal-header {
+      background-color: #f3e37c;
+    }
+  }
+}

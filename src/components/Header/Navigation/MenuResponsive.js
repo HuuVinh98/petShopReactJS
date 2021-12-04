@@ -15,29 +15,30 @@ import {
   faTimes,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
+
 export default function MenuResponsive() {
   return (
     <nav class="nav-responsive">
       <ul class="flex f-column a-center">
-        <li>
+        {/* <li>
           <span class="close-menu">
             <FontAwesomeIcon icon={faTimes} color="white" />
           </span>
-        </li>
+        </li> */}
         <li>
           <ul class="flex f-column j-start">
             <li class="flex j-start a-center">
               <FontAwesomeIcon icon={faPhoneAlt} />
               <p>+012 3456 789</p>
             </li>
-            <li class="flex j-start a-center">
+            {/* <li class="flex j-start a-center">
               <FontAwesomeIcon icon={faEnvelope} />
               <p>demo@example.com</p>
             </li>
             <li class="flex j-start a-center">
               <FontAwesomeIcon icon={faUser} />
               <p>Account</p>
-            </li>
+            </li> */}
           </ul>
         </li>
         <li class="home">

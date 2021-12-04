@@ -1,51 +1,45 @@
 @import "grid";
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li 
-{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-a 
-{
-    text-decoration: none;
-    transition: all 0.5s;
+a {
+  text-decoration: none !important;
+  transition: all 0.5s;
 }
-
-input, button 
-{
-    outline: none;
+ol,
+ul {
+  padding-left: 0rem !important;
 }
-.container
-{
-    max-width: 1150px;
-    margin: 0 auto;
-    @include lg()
-    {
-        padding: 0px 3%;
-    }
-    @include md()
-    {
-        max-width: 800px;
-    }
-    @include sm()
-    {
-        max-width: 680px;
-    }
-    @include xs()
-    {
-       padding: 0px 10%;
-    }
+input,
+button {
+  outline: none;
 }
-.container2
-{
-    max-width: 1400px;
-    margin: 0 auto;
-    @include lg(){
-        padding: 0px 3%;
-    }
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  @include lg() {
+    padding: 0px 3%;
+  }
+  @include md() {
+    max-width: 800px;
+  }
+  @include sm() {
+    max-width: 680px;
+  }
+  @include xs() {
+    padding: 0px 10%;
+  }
+}
+.container2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  @include lg() {
+    padding: 0px 3%;
+  }
 }

@@ -1,12 +1,6 @@
 import "./Navigation.scss";
-import exfish from "./exfish.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faAngleLeft,
-  faAngleRight,
-  faAngleUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import vietnamfood from "../../../images/vietnamfood.jpg";
 import { Link } from "react-router-dom";
 

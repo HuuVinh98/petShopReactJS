@@ -3,9 +3,7 @@ import DetailPage from "./DetailPage/DetailPage";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import Wishlist from "./Wishlist/Wishlist";
 import Checkout from "./Checkout/Checkout";
-
 import { Switch, Route } from "react-router-dom";
-
 export default function MainContent() {
   return (
     <Switch>
