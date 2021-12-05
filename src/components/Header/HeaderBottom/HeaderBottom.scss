@@ -175,9 +175,9 @@
 
 .modal-dialog {
   background-color: #f3e37c;
-  height: 100vh;
+  height: max-content;
   .modal-content {
-    height: 100%;
+    height: max-content;
     .modal-header {
       background-color: #f3e37c;
     }

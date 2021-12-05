@@ -12,10 +12,21 @@ a {
   text-decoration: none !important;
   transition: all 0.5s;
 }
+//modif code in reboot.scss of boostrap
 ol,
 ul {
   padding-left: 0rem !important;
 }
+p {
+  margin-bottom: 0 !important;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+// -----
 input,
 button {
   outline: none;

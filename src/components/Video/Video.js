@@ -25,7 +25,7 @@ export default function Video() {
             ></iframe>
             <div className="descr flex f-column">
               <h3>How are you? I'm fine, thank you.</h3>
-              <div className="card flex j-start">
+              <div className="tag flex j-start">
                 <span>
                   30 min
                   <FontAwesomeIcon
@@ -58,7 +58,7 @@ export default function Video() {
               ></iframe>
               <div className="descr flex f-column">
                 <h3>How are you? I'm fine, thank you.</h3>
-                <div className="card flex j-start">
+                <div className="tag flex j-start">
                   <span>
                     30 min
                     <FontAwesomeIcon
@@ -90,7 +90,7 @@ export default function Video() {
               ></iframe>
               <div className="descr flex f-column">
                 <h3>How are you? I'm fine, thank you.</h3>
-                <div className="card flex j-start">
+                <div className="tag flex j-start">
                   <span>
                     30 min
                     <FontAwesomeIcon
@@ -123,7 +123,7 @@ export default function Video() {
               ></iframe>
               <div className="descr flex f-column">
                 <h3>How are you? I'm fine, thank you.</h3>
-                <div className="card flex j-start">
+                <div className="tag flex j-start">
                   <span>
                     30 min
                     <FontAwesomeIcon
@@ -155,7 +155,7 @@ export default function Video() {
               ></iframe>
               <div className="descr flex f-column">
                 <h3>How are you? I'm fine, thank you.</h3>
-                <div className="card flex j-start">
+                <div className="tag flex j-start">
                   <span>
                     30 min
                     <FontAwesomeIcon
