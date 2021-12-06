@@ -1,5 +1,5 @@
 import "./Wishlist.scss";
-import exfish from "../../../images/exfish.png";
+import mucrim from "../../../images/mucrim.png";
 import WishlistItem from "./WishlistItem/WishlistItem";
 export default function Wishlist() {
   return (
@@ -7,7 +7,7 @@ export default function Wishlist() {
       <div class="container">
         <h1>Wishlist</h1>
         <div class="wishlist-content flex wr-wrap">
-          <WishlistItem url={exfish} name="Vulva Fish"></WishlistItem>
+          <WishlistItem url={mucrim} name="Squid married satay"></WishlistItem>
         </div>
       </div>
     </div>

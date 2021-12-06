@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import vietnamfood from "../../../images/vietnamfood.jpg";
 import { Link } from "react-router-dom";
-
+import coconut from "../../../images/coconut.png";
 function Navigation() {
   return (
     <nav className="navigation">
@@ -309,7 +309,9 @@ function Navigation() {
         </li>
       </ul>
       <div className="circle--right circle">
-        <div className="sub-circle"></div>
+        <div className="sub-circle">
+          <img src={coconut} />
+        </div>
       </div>
     </nav>
   );

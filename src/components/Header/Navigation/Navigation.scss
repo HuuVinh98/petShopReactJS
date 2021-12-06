@@ -36,6 +36,17 @@ nav.navigation {
   .circle--right {
     right: 0;
     transform: translateX(50%);
+    .sub-circle {
+      position: relative;
+      img {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: 0px;
+        left: -70%;
+        transform: rotate(20deg);
+      }
+    }
   }
   .menu {
     height: 100%;
