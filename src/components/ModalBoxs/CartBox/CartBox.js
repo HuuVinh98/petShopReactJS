@@ -2,7 +2,7 @@ import "./CartBox.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import CartBoxItem from "./CartBoxItem/CartBoxItem";
-import exfish from "../../../images/exfish.png";
+import mucrim from "../../../images/mucrim.png";
 export default function CartBox() {
   return (
     <div className="cart-box flex f-column">
@@ -16,7 +16,12 @@ export default function CartBox() {
       </div>
       <div className="cart-box__items flex f-column j-start">
         {/* ------------------------------- add item */}
-        <CartBoxItem url={exfish} name="Vulva Fish" price="$30" quantity={2} />
+        <CartBoxItem
+          url={mucrim}
+          name="Squid married Satay"
+          price="$30"
+          quantity={2}
+        />
         {/* ------------------------------- add item */}
       </div>
       <div className="cart-box__footer flex f-column">

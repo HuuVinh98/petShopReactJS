@@ -3,6 +3,7 @@ import DetailPage from "./DetailPage/DetailPage";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import Wishlist from "./Wishlist/Wishlist";
 import Checkout from "./Checkout/Checkout";
+import SearchPage from "./SearchPage/SearchPage";
 import { Switch, Route } from "react-router-dom";
 export default function MainContent() {
   return (
@@ -21,6 +22,9 @@ export default function MainContent() {
       </Route>
       <Route path="/checkout">
         <Checkout />
+      </Route>
+      <Route path="/search">
+        <SearchPage />
       </Route>
     </Switch>
   );

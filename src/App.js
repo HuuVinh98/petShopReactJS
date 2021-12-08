@@ -5,10 +5,7 @@ import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/ModalBoxs/ScrollTop/ScrollTop";
-import CartBox from "./components/ModalBoxs/CartBox/CartBox";
 import Account from "./components/ModalBoxs/Account/Account";
-import SearchBox from "./components/ModalBoxs/SearchBox/SearchBox";
-import NavResponsive from "./components/Header/Navigation/NavResponsive";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -28,10 +25,8 @@ function App() {
         {showBtn && <ScrollTop />}
         {/* <CartBox /> */}
         {/* <Account /> */}
-        {/* <SearchBox /> */}
         <Header />
         <MainContent />
-        <NavResponsive />
         <Footer />
       </div>
     </Router>

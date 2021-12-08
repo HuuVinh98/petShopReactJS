@@ -54,13 +54,15 @@ function HeaderBottom() {
               </div>
             </li>
             <li className="icons__search">
-              <div>
-                <FontAwesomeIcon
-                  icon={faSearch}
-                  color="#333"
-                  style={{ fontSize: "18px" }}
-                />
-              </div>
+              <a href="/search">
+                <div>
+                  <FontAwesomeIcon
+                    icon={faSearch}
+                    color="#333"
+                    style={{ fontSize: "18px" }}
+                  />
+                </div>
+              </a>
             </li>
             <li className="icons__wishlist">
               <div>

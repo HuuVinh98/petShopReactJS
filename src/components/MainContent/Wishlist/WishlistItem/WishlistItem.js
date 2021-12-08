@@ -15,7 +15,9 @@ export default function WishlistItem({ url, name }) {
         <div class="item-option flex j-spaceBetween">
           <button class="item-option__btn-add">Add to cart</button>
           <span class="item-option__btn-view">
-            <FontAwesomeIcon icon={faSearchPlus} />
+            <a href="/product">
+              <FontAwesomeIcon icon={faSearchPlus} />
+            </a>
           </span>
         </div>
       </div>

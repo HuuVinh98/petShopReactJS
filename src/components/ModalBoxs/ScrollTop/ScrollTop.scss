@@ -5,28 +5,31 @@
   }
 }
 .turn-top-button {
+  background-image: url(../../../images/conmuc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #f3a738;
+  width: 100px;
+  height: 150px;
+  //background-color: #f3a738;
   position: fixed;
   top: 500px;
-  right: 50px;
+  right: 20px;
   @include sm() {
     right: 20px;
   }
   z-index: 12;
-  border-radius: 50%;
+  //border-radius: 50%;
   &:hover {
+    animation: top 1s forwards infinite;
     a {
-      animation: top 1s forwards infinite;
+      animation: none;
     }
   }
   a {
-    i {
-      color: white;
-    }
+    margin-bottom: 30px;
+    animation: top 1s forwards infinite;
   }
 }

@@ -2,9 +2,6 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./Slider.scss";
-import slide1 from "./slide1.png";
-import slide2 from "./slide2.png";
-import slide3 from "./slide3.png";
 import Slide from "./Slide/Slide";
 import mucrim from "../../images/mucrim.png";
 function Slider() {
