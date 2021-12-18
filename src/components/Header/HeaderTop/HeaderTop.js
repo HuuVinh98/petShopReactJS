@@ -81,16 +81,6 @@ function HeaderTop({
               ></FontAwesomeIcon>
             </a>
           </li>
-          <li>
-            <a href={linkIn}>
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                color="white"
-                style={{ marginRight: "10px" }}
-                className="fa-icon"
-              ></FontAwesomeIcon>
-            </a>
-          </li>
         </ul>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import "./FooterTop.scss";
 import logo from "../../../images/logo.png";
+import traidua from "../../../images/traidua.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -14,15 +15,16 @@ export default function FooterTop() {
     <div className="footer-top">
       <div className="footer-top__left">
         <ul>
+          <img src={traidua} className="coconut" />
           <li>
             <Link to="/">
               <img src={logo} alt="" />
             </Link>
           </li>
-          <li style={{ textAlign: "center" }}>
+          {/* <li style={{ textAlign: "center" }}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
             nesciunt voluptatem beatae nemo.{" "}
-          </li>
+          </li> */}
           <li>
             <span>
               <a href="">
@@ -57,78 +59,35 @@ export default function FooterTop() {
                 />
               </a>
             </span>
-            <span>
-              <a href="">
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  style={{ fontSize: "20px" }}
-                />
-              </a>
-            </span>
           </li>
         </ul>
       </div>
-      <div className="footer-top__right row">
-        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <ul>
-            <li>Services</li>
-            <li>
-              <a href="">My Account</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Shopping Cart</a>
-            </li>
-            <li>
-              <a href="">Shop</a>
-            </li>
-            <li>
-              <a href="">Services Login</a>
-            </li>
-          </ul>
-        </div>
-        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <ul>
-            <li>Services</li>
-            <li>
-              <a href="">My Account</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Shopping Cart</a>
-            </li>
-            <li>
-              <a href="">Shop</a>
-            </li>
-            <li>
-              <a href="">Services Login</a>
-            </li>
-          </ul>
-        </div>
-        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <ul>
-            <li>Services</li>
-            <li>
-              <a href="">My Account</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Shopping Cart</a>
-            </li>
-            <li>
-              <a href="">Shop</a>
-            </li>
-            <li>
-              <a href="">Services Login</a>
-            </li>
-          </ul>
-        </div>
+      <div className="footer-top__right flex j-spaceBetween">
+        <ul>
+          <li>Contact Us</li>
+          <li>Phone: +0123456</li>
+          <li>Email: demo@gmail.com</li>
+          <li>Address: abcd, efgh, iklm, xyz</li>
+        </ul>
+
+        <ul>
+          <li>Feedback</li>
+          <li>
+            <a href="">My Account</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">Shopping Cart</a>
+          </li>
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Services Login</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
