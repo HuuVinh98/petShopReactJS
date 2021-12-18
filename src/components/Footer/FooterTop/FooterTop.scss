@@ -6,14 +6,10 @@
   align-items: center;
   width: 100%;
   padding-bottom: 50px;
-  @include xs() {
+  @include sm() {
     flex-direction: column;
   }
   .footer-top__left {
-    // width: 30%;
-    // @include xs() {
-    //   width: 100%;
-    // }
     ul {
       display: flex;
       justify-content: center;
@@ -86,13 +82,13 @@
   }
   .footer-top__right {
     width: 60%;
-    // justify-content: space-between;
-    // @include md() {
-    //   width: 70%;
-    // }
-    // @include xs() {
-    //   width: 100%;
-    // }
+    @include sm() {
+      width: 100%;
+      margin-top: 50px;
+    }
+    @include xs() {
+      flex-direction: column;
+    }
     ul {
       li {
         color: black;

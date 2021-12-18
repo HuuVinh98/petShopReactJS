@@ -10,6 +10,11 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import {
+  faEnvelope,
+  faLocationArrow,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 export default function FooterTop() {
   return (
     <div className="footer-top">
@@ -65,27 +70,30 @@ export default function FooterTop() {
       <div className="footer-top__right flex j-spaceBetween">
         <ul>
           <li>Contact Us</li>
-          <li>Phone: +0123456</li>
-          <li>Email: demo@gmail.com</li>
-          <li>Address: abcd, efgh, iklm, xyz</li>
+          <li>
+            <FontAwesomeIcon icon={faPhone} style={{ marginRight: "5px" }} />
+            Phone: +0123456
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "5px" }} />{" "}
+            Email: demo@gmail.com
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faLocationArrow}
+              style={{ marginRight: "5px" }}
+            />
+            Address: abcd, efgh, iklm, xyz
+          </li>
         </ul>
 
         <ul>
           <li>Feedback</li>
           <li>
-            <a href="">My Account</a>
+            <a href="">About our services</a>
           </li>
           <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">Shopping Cart</a>
-          </li>
-          <li>
-            <a href="">Shop</a>
-          </li>
-          <li>
-            <a href="">Services Login</a>
+            <a href="">About our products</a>
           </li>
         </ul>
       </div>

@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/ModalBoxs/ScrollTop/ScrollTop";
 import Account from "./components/ModalBoxs/Account/Account";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import ColumnMenu from "./components/ModalBoxs/ColumnMenu/ColumnMenu";
 function App() {
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
@@ -25,6 +25,7 @@ function App() {
         {showBtn && <ScrollTop />}
         {/* <CartBox /> */}
         {/* <Account /> */}
+        <ColumnMenu />
         <Header />
         <MainContent />
         <Footer />
