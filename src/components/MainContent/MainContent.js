@@ -5,11 +5,11 @@ import Wishlist from "./Wishlist/Wishlist";
 import Checkout from "./Checkout/Checkout";
 import SearchPage from "./SearchPage/SearchPage";
 import { Switch, Route } from "react-router-dom";
-export default function MainContent() {
+export default function MainContent({ abc }) {
   return (
     <Switch>
       <Route path="/" exact>
-        <HomePage />
+        <HomePage data={abc} />
       </Route>
       <Route path="/product/">
         <DetailPage />

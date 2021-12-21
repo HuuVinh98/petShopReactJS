@@ -20,7 +20,6 @@ export default function FooterTop() {
     <div className="footer-top">
       <div className="footer-top__left">
         <ul>
-          <img src={traidua} className="coconut" />
           <li>
             <Link to="/">
               <img src={logo} alt="" />
@@ -77,13 +76,6 @@ export default function FooterTop() {
           <li>
             <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "5px" }} />{" "}
             Email: demo@gmail.com
-          </li>
-          <li>
-            <FontAwesomeIcon
-              icon={faLocationArrow}
-              style={{ marginRight: "5px" }}
-            />
-            Address: abcd, efgh, iklm, xyz
           </li>
         </ul>
 

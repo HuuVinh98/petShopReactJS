@@ -12,7 +12,7 @@ export default function Item({ url, name, desc, price }) {
           style={{ fontSize: "25px" }}
         />
         <a href="/product">
-          <img src={url} alt="" />
+          <img src={url} alt="" style={{ width: "200px", height: "200px" }} />
         </a>
       </div>
       <div class="item__text">

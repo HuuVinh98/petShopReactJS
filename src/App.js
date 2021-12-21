@@ -9,6 +9,7 @@ import Account from "./components/ModalBoxs/Account/Account";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ColumnMenu from "./components/ModalBoxs/ColumnMenu/ColumnMenu";
 function App() {
+  //control scroll top icon
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +20,19 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [showBtn]);
+  //get API
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    async function fetchProducts() {
+      const requestUrl = "http://api.vnsnack.com/product";
+      const response = await fetch(requestUrl);
+      const responseJSON = await response.json();
+      //const { data } = responseJSON;
+      setProducts(responseJSON);
+    }
+    fetchProducts();
+  }, []);
+
   return (
     <Router>
       <div className="App">
@@ -27,7 +41,7 @@ function App() {
         {/* <Account /> */}
         <ColumnMenu />
         <Header />
-        <MainContent />
+        <MainContent abc={products} />
         <Footer />
       </div>
     </Router>

@@ -1,7 +1,7 @@
 import "./Popular.scss";
 import Item from "./Item/Item";
 import mucrim from "../../images/mucrim.png";
-export default function Popular() {
+export default function Popular({ products }) {
   return (
     <section className="popular">
       <div className="container">
@@ -27,102 +27,19 @@ export default function Popular() {
 
         <div className="popular-products">
           <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <Item
-                url={mucrim}
-                name="Squid Married Satay"
-                desc="How are you? I'm fine thank you. And you?"
-                price="$30.00"
-              ></Item>
-            </div>
+            {products.map((product, idx) => {
+              return (
+                <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                  <Item
+                    key={idx}
+                    url={product.photos[0].url}
+                    name={product.name}
+                    desc="How are you? I'm fine thank you. And you?"
+                    price={product.price + "$"}
+                  ></Item>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
